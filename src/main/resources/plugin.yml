@@ -1,0 +1,9 @@
+main: me.tdvne.main
+name: ChatClear
+authors:
+ - tdvne
+version: 1.0-SNAPSHOT
+commands:
+  chatclear:
+    description: Clears the chat
+    aliases: [cc, clearchat]
