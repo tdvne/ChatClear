@@ -1,6 +1,6 @@
-package me.tdvne.command;
+package me.tdvne.chatclear.command;
 
-import me.tdvne.util.CC;
+import me.tdvne.chatclear.util.CC;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

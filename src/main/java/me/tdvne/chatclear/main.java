@@ -1,7 +1,7 @@
-package me.tdvne;
+package me.tdvne.chatclear;
 
-import me.tdvne.command.ChatClear;
-import me.tdvne.util.CC;
+import me.tdvne.chatclear.command.ChatClear;
+import me.tdvne.chatclear.util.CC;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
