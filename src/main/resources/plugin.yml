@@ -1,4 +1,4 @@
-main: me.tdvne.main
+main: me.tdvne.chatclear.main
 name: ChatClear
 description: A simple yet effective way to clear chat
 authors:
