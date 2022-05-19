@@ -3,12 +3,21 @@ package me.tdvne;
 import me.tdvne.command.ChatClear;
 import me.tdvne.util.CC;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class main extends JavaPlugin {
+public class main extends JavaPlugin implements Listener{
+    private static main instance;
+
+    public static main getInstance() {
+        return instance;
+    }
+
     public void onEnable() {
+        instance = this;
         this.getCommand("chatclear").setExecutor(new ChatClear());
+        getServer().getPluginManager().registerEvents(this, this);
         System.out.println("[ChatClear] This plugin has successfully enabled.");
     }
 
