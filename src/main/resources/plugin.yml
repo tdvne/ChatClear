@@ -1,6 +1,6 @@
 main: me.tdvne.chatclear.main
 name: ChatClear
-description: A simple yet effective way to clear chat
+description: A simple spigot/bukkit plugin to clear chat modernly & effectively
 authors:
  - tdvne
 version: 1.0-SNAPSHOT
