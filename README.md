@@ -1,5 +1,5 @@
 # ChatClear
-A simple yet effective way to clear chat.
+A simple spigot/bukkit plugin to clear chat modernly & effectively
 
 # Features
 
