@@ -31,11 +31,9 @@ public class ChatClear implements CommandExecutor {
         if (sender instanceof Player) {
             final Player player = (Player) sender;
             Bukkit.broadcastMessage(CC.translate("&c&lThe chat was cleared by &e&l" + player.getDisplayName() + "&c&l!"));
-            System.out.println("The in-game chat was successfully cleared."); //DEBUG
             return true;
         }
         Bukkit.broadcastMessage(CC.translate("&c&lThe chat was cleared by &e&lCONSOLE&c&l!"));
-        System.out.println("You have successfully cleared the in-game chat."); //DEBUG
         return false;
     }
 }
