@@ -2,27 +2,29 @@ package me.tdvne.chatclear;
 
 import me.tdvne.chatclear.command.ChatClear;
 import me.tdvne.chatclear.util.CC;
+import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class main extends JavaPlugin implements Listener{
-    private static main instance;
+public class Main extends JavaPlugin implements Listener {
+    private static Main instance;
 
-    public static main getInstance() {
+    public static Main getInstance() {
         return instance;
     }
 
     public void onEnable() {
         instance = this;
+        Bukkit.getServer().getConsoleSender().sendMessage("§a[ChatClear] Registering Listeners...");
         this.getCommand("chatclear").setExecutor(new ChatClear());
         getServer().getPluginManager().registerEvents(this, this);
-        System.out.println("[ChatClear] This plugin has successfully enabled.");
+        Bukkit.getServer().getConsoleSender().sendMessage("§aChatClear has successfully registered listeners & loaded.");
     }
 
     public void onDisable() {
-        System.out.println("[ChatClear] This plugin has successfully disabled");
+        Bukkit.getServer().getConsoleSender().sendMessage("§aChatClear has successfully unloaded & disabled.");
     }
 
     @EventHandler
