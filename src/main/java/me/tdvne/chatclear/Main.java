@@ -10,6 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin implements Listener {
     private static Main instance;
+    Main plugin = this;
 
     public static Main getInstance() {
         return instance;
@@ -34,7 +35,7 @@ public class Main extends JavaPlugin implements Listener {
             e.getPlayer().sendMessage(CC.translate("&4&lChatClear"));
             e.getPlayer().sendMessage(CC.translate(" &c&l┃ &fAuthor: &ctdvne"));
             e.getPlayer().sendMessage(CC.translate(" &c&l┃ &fDiscord: &ctdvne#0001"));
-            e.getPlayer().sendMessage(CC.translate(" &c&l┃ &fVersion: &cv1.0"));
+            e.getPlayer().sendMessage(CC.translate(" &c&l┃ &fVersion: &cv" + plugin.getDescription().getVersion()));
             e.getPlayer().sendMessage(CC.translate("&4&m--*----------------*--"));
             e.setCancelled(true);
         }
