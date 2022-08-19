@@ -4,6 +4,7 @@ description: A simple spigot/bukkit plugin to clear chat modernly & effectively
 authors:
  - tdvne
 version: 1.0-SNAPSHOT
+website: https://edater.dev
 commands:
   chatclear:
     description: Clears the chat
