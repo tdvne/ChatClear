@@ -24,7 +24,7 @@ public class ChatClear implements CommandExecutor {
             if (all.hasPermission("chatclear.admin")) {
                 continue;
             }
-            for (int i = 0; i < 1200; ++i) { //Simply Increase if Clients have Unlimited Chat / This Already Blocks Lunar
+            for (int i = 0; i < 1200; ++i) {
                 all.sendMessage(" ");
             }
         }
